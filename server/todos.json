@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1742998586639,
+      "text": "sleep",
+      "completed": false
+    },
+    {
+      "id": 1742998590661,
+      "text": "eat",
+      "completed": false
+    },
+    {
+      "id": 1742998598212,
+      "text": "coding",
+      "completed": false
+    }
+  ]
+}

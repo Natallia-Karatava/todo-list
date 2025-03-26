@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #28a745;
+  --secondary-color: #d4edda;
+  --hover-color: #218838;
+  --text-gray: #333333;
+  --white: #ffffff;
+  --bg-hell-grey: #dcdcdc40;
+  --completed-color: #808080;
+  --delete-color: rgb(235, 85, 85);
+  --delete-hover-color: darkred;
+  --background: #28a74635;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--text-color);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+}
+
+.todo-box {
+  background: var(--white);
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 25%;
+  min-width: 35rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-hell-grey);
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+.todo-list {
+  margin-top: 2rem;
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+.task-text.completed {
+  color: var(--completed-color);
+  text-decoration: line-through;
+}
+
+.circle,
+.delete-icon {
+  text-decoration: none;
+}
+
+.delete-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: var(--delete-color);
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.delete-icon:hover {
+  color: var(--delete-hover-color);
+}
+
+.circle {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: 2px solid var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circle:hover {
+  border: 2px solid var(--primary-color);
+}
+
+.circle.checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.checkmark {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+
+.circle.checked .checkmark {
+  display: block;
+}
